@@ -7,13 +7,14 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var async = require('async');
 var request = require('request');
-var agenda = require('agenda')({ db: { address: 'localhost:27017/test' } });
+
 var sugar = require('sugar');
 var nodemailer = require('nodemailer');
 var xml2js = require('xml2js');
 var _ = require('lodash');
 
-var compress = require('compression')
+var compress = require('compression');
+
 
 
 var session = require('express-session');
@@ -76,7 +77,7 @@ userSchema.methods.comparePassword = function(candidatePassword, cb) {
 var User = mongoose.model('User', userSchema);
 var Show = mongoose.model('Show', showSchema);
 
-mongoose.connect('localhost');
+mongoose.connect('mongodb://recon6:green1@ds051523.mongolab.com:51523/showrecon');
 
 
 
