@@ -77,7 +77,7 @@ userSchema.methods.comparePassword = function(candidatePassword, cb) {
 var User = mongoose.model('User', userSchema);
 var Show = mongoose.model('Show', showSchema);
 
-mongoose.connect('mongodb://recon6:green1@ds051523.mongolab.com:51523/showrecon');
+mongoose.connect('localhost');
 
 
 
