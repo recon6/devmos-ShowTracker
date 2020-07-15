@@ -20,7 +20,7 @@
     "express": "~4.13.1",
     "express-session": "^1.12.1",
     "jade": "~1.11.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.19",
     "mongoose": "latest",
     "morgan": "~1.6.1",
     "nodemailer": "^1.10.0",
